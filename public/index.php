@@ -7,10 +7,9 @@ define('VENDOR_PATH', ROOT_PATH . '/../vendor');
 define('AF_PATH', ROOT_PATH . '/../../aapf/src');
 define('LOG_PATH', '/var/log');
 define('APP_NAME', 'api.devinjin.top');
-define('PAGE_PATH', ROOT_PATH . '/../page');
-define('CONTROLLER_PATH', APP_PATH . '/controller');
-define('MIDDLEWARE_PATH', APP_PATH . '/middleware');
+define('CONTROLLER_PATH', APP_PATH . '/Controller');
+define('MIDDLEWARE_PATH', APP_PATH . '/Middleware');
 
 require_once VENDOR_PATH . '/autoload.php';
-$app = require_once AF_PATH . '/Bootstrap/app.php';die;
+$app = require_once AF_PATH . '/Bootstrap/app.php';
 $app->run();
